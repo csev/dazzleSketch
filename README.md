@@ -15,8 +15,8 @@ beyond 10.8 :(. You add dazzleSketch to a web page using the following pattern:
     <body>
         <h1>This is a Header</h1>
         <p>This is a paragraph that we will scribble on.</p>
-        <script src="jquery-1.11.2.min.js"></script>
-        <script src="sketch.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="http://intridea.github.io/sketch.js/lib/sketch.js"></script>
         <script src="dazzleSketch.js"></script>
     </body>
     </html>
