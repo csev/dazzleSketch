@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <title>Dazzlesketch by csev</title>
+    <title>DazzleSketch by csev</title>
   </head>
 
   <body>
@@ -16,7 +16,8 @@
     <header>
       <div class="container">
         <h1>Dazzlesketch</h1>
-        <h2>A JavaScript library that allows one to sketch over reveal.js presentations or any web page - OmniDazzle meets JavaScript</h2>
+        <h2>A JavaScript library that allows one to sketch over reveal.js presentations or any web 
+        page - OmniDazzle meets JavaScript</h2>
 
         <section id="downloads">
           <a href="https://github.com/csev/dazzleSketch/zipball/master" class="btn">Download as .zip</a>
@@ -29,19 +30,22 @@
     <div class="container">
       <section id="main_content">
         <h1>
-<a id="dazzlesketch---omnidazzle-meets-javascript" class="anchor" href="#dazzlesketch---omnidazzle-meets-javascript" aria-hidden="true"><span class="octicon octicon-link"></span></a>dazzleSketch - OmniDazzle meets JavaScript</h1>
+<a id="dazzlesketch---omnidazzle-meets-javascript" class="anchor" href="#dazzlesketch---omnidazzle-meets-javascript" aria-hidden="true"><span class="octicon octicon-link"></span></a>DazzleSketch - OmniDazzle meets JavaScript</h1>
 
 <p>A JavaScript library that allows one to sketch over a web page or <code>reveal.js</code> presentation.  Quite useful when using 
 <code>reveal.js</code> to give a live lecture or when you are using <code>reveal.js</code> to record a lecture using a tool like 
 <a href="https://www.techsmith.com/camtasia.html" target="_blank">Camtasia</a>.</p>
 
-<p>This is a bit of code that builds on the excellent <code>sketch.js</code> library that implements a simple sketching tool
+<p>You can play with a simple <a href="sample.html" target="_blank">demonstration</a> or watch
+an <a href="http://youtu.be/N-ogf0ZDpj4" target="_blank">ingtroductory video</a>.</p>
+
+<p>DazzleSketch builds on the excellent <code>sketch.js</code> library that implements a simple sketching tool
 using jQuery and the HTML5 canvas:</p>
 
 <p><a href="http://intridea.github.io/sketch.js/">http://intridea.github.io/sketch.js/</a></p>
 
 <p>I mimic the UI and keystrokes of the OmniDazzle drawing tool that worked so well but was not compatible with MacOS versions
-beyond 10.8 :(. You add dazzleSketch to a web page using the following pattern:</p>
+beyond 10.8 :(. You add DazzleSketch to a web page using the following pattern:</p>
 
 <pre><code>&lt;html lang="en"&gt;
 &lt;body&gt;
@@ -57,7 +61,7 @@ beyond 10.8 :(. You add dazzleSketch to a web page using the following pattern:<
 <p>This also works well when added to the reveal.js HTML.  I would like to see it turned into a plugin for 
 <code>reveal.js</code> - but I am sure it needs a bit of code review.</p>
 
-<p>When dazzleSketch is loaded, you see no UI on the screen - it is just ready to scribble and 
+<p>When DazzleSketch is loaded, you see no UI on the screen - it is just ready to scribble and 
 activated using the following keystrokes.</p>
 
 <ul>
@@ -74,11 +78,11 @@ activated using the following keystrokes.</p>
 <li>ctrl-= Make pen wider</li>
 </ul>
 
-<p>While you are scribbling most mouse movements will be taken over by dazzleSketch.  If you hover over a link, the 
+<p>While you are scribbling most mouse movements will be taken over by DazzleSketch.  If you hover over a link, the 
 a:hover action will not happen and you might not be able to click on a link in the HTML document until you 
-clear the sketch overlay with ctrl-`.  This is because dazzleSketch makes an HTML5 canvas that covers 
+clear the sketch overlay with ctrl-`.  This is because DazzleSketch makes an HTML5 canvas that covers 
 the entire window area and uses z-index to be "on top" of the other HTML content on the page.   When you clear 
-the screen, the dazzleSketch canvas is placed behind the rest of the content using z-index 
+the screen, the DazzleSketch canvas is placed behind the rest of the content using z-index 
 so all the normal mouse movements apply to the web content.</p>
 
 <p>For me, I have a <a target="_blank" href="http://www.amazon.com/gp/product/B00115OFJK/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00115OFJK&amp;linkCode=as2&amp;tag=drchu02-20&amp;linkId=VKON6Z2MQ3TLWN6S">Wacom Cintiq 12WX 12-Inch Pen Display</a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=drchu02-20&amp;l=as2&amp;o=1&amp;a=B00115OFJK" width="1" height="1" border="0" alt="">
