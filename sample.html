@@ -1,7 +1,36 @@
 <html lang="en">
 <body>
-<h1>This is a Header</h1>
-<p>This is a paragraph that we will scribble on.</p>
+<h1>Playing with DazzleSketch</h1>
+<p>A JavaScript library that allows one to sketch over a web page or <code>reveal.js</code> presentation.  This can be used 
+during a live or screen-recorded a lecture using a tool like 
+<a href="https://www.techsmith.com/camtasia.html" target="_blank">Camtasia</a>.</p>
+
+<p>Here is an <a href="http://youtu.be/N-ogf0ZDpj4" target="_blank">introductory video</a>.</p>
+
+<p>This page already has DazzleSketch loaded so you can scribble on this page using the following 
+keystrokes and your mouse.  DazzleSketch has no UI other than the scribbling so all your viewers 
+see is what is on your screen and what you are drawing.</p>
+
+<ul>
+<li>ctrl-` (next to the 1) erase and turn off drawing</li>
+<li>ctrl-1 Yellow Pen</li>
+<li>ctrl-2 Green Pen</li>
+<li>ctrl-3 Cyan Pen</li>
+<li>ctrl-4 Red Pen</li>
+<li>ctrl-5 White Pen</li>
+<li>ctrl-6 Blue Pen</li>
+<li>ctrl-7 Magenta Pen</li>
+<li>ctrl-8 Black Pen</li>
+<li>ctrl-- Make pen narrower</li>
+<li>ctrl-= Make pen wider</li>
+</ul>
+
+<p>While you are scribbling most mouse movements will be taken over by DazzleSketch.  If you hover over a link, the 
+a:hover action will not happen and you might not be able to click on a link in the HTML document until you 
+clear the sketch overlay with ctrl-`.  This is because DazzleSketch makes an HTML5 canvas that covers 
+the entire window area and uses z-index to be "on top" of the other HTML content on the page.   When you clear 
+the screen, the DazzleSketch canvas is placed behind the rest of the content using z-index 
+so all the normal mouse movements apply to the web content.</p>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="http://intridea.github.io/sketch.js/lib/sketch.js"></script>
