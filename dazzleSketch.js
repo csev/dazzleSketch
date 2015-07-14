@@ -30,6 +30,7 @@ $(document).ready( function() {
     if ( typeof Reveal !== 'undefined') {
         Reveal.addEventListener( 'slidechanged', function( event ) {
             clearSketchCanvas();
+            $('#sketchDiv').css('background-color','transparent')
         } );
     }
 });
@@ -75,6 +76,13 @@ $(document).keypress(function(event)
         if ( currentSketchSize > 0 ) {
             currentSketchSize--;
             $('#sketchCanvas').sketch().set('size', sizes[currentSketchSize]);
+        }
+    } else if ( w == 16 && event.ctrlKey ) { // CTRL-P
+        var bgcolor = $('#sketchDiv').css('background-color');
+        if ( bgcolor === 'transparent' || bgcolor === 'rgba(0, 0, 0, 0)') {
+            $('#sketchDiv').css('background-color','white')
+        } else {
+            $('#sketchDiv').css('background-color','transparent')
         }
     } else if ( w == 61 && event.ctrlKey ) { // Equals key
         if ( currentSketchSize < sizes.length-1 ) {
